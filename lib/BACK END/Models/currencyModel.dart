@@ -14,8 +14,8 @@ class CurrencyModel {
     Rates rates;
 
     factory CurrencyModel.fromJson(Map<String, dynamic> json) => CurrencyModel(
-        amount: json["amount"].toDouble(),
-        base: json["base"].toString(),
+        amount: json["amount"],
+        base: json["base"],
         rates: Rates.fromJson(json["rates"]),
     );
 }

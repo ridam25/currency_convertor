@@ -3,7 +3,7 @@ class Rates {
         this.inr,
     });
 
-    double inr;
+    dynamic inr;
 
     factory Rates.fromJson(Map<String, dynamic> json) => Rates(
         inr: json["INR"],
